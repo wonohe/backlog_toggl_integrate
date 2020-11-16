@@ -10,10 +10,9 @@ from chalicelib.models import TogglReportSummary
 from chalicelib.error import TogglAPIError
 from chalicelib.error import TogglDBError
 from chalicelib.error import BacklogAPIError
-from typing import List, Tuple, Dict, Optional
+from typing import List
 import os
 import datetime
-import logging
 import requests
 import json
 import re

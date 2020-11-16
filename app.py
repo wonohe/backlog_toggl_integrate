@@ -1,7 +1,5 @@
+from typing import Dict
 from chalice import Chalice, Cron
-import json
-import os
-from chalice import Chalice
 from chalicelib.controllers import WorkTimeController
 from chalicelib.repositories import TogglReportSummaryRepository
 from chalicelib.repositories import DbTogglReportRepository
@@ -14,10 +12,8 @@ app.debug = True
 
 
 @app.schedule(Cron(0, 23, '*', '*', '?', '*'))
-#@app.schedule(Cron('0/2', '*', '*', '*', '?', '*')) #for debug
-
-
-def main(event: dict,):
+# @app.schedule(Cron('0/2', '*', '*', '*', '?', '*')) #for debug
+def main(event: Dict):
     app.log.info('Exec Start')
     try:
         # Create Usecase

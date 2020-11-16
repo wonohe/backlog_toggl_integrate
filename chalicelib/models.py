@@ -48,5 +48,5 @@ class BacklogIssue:
 
     issue_key: str = ''
     actual_hours: float = None
-    manual_actual_hours: float = 0.0 
+    manual_actual_hours: float = 0.0
     comments: list = None
