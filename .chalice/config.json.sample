@@ -1,0 +1,24 @@
+{
+  "version": "2.0",
+  "app_name": "nulabExamApp",
+  "stages": {
+    "dev": {
+      "environment_variables": {
+        "api_gateway_stage": "api",
+        "TOGGL_API_TOKEN": "",
+        "TOGGL_PAST_DAYS":"6",
+        "TOGGL_BASE_URL":"https://www.toggl.com",
+        "BACKLOG_PRJ_KEY": "HOGE",
+        "BACKLOG_BASE_URL":"https://fugafuga.backlog.jp",
+        "BACKLOG_APIKEY":"",
+        "BACKLOG_COMMENT":"[togglより連携]",
+        "BACKLOG_COMMENT_COUNT":"100",
+        "DB_HOST":"",
+        "DB_NAME":"",
+        "DB_PORT":"",
+        "DB_USER":"",
+        "DB_PASSWORD":""
+      }
+    }
+  }
+}
