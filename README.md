@@ -1,5 +1,5 @@
 # Name
-Sample App for nulab-exam
+Sample App
 
 # Features
 本アプリは個人の作業時間を登録する[toggl](https://toggl.com/)というサービスとBacklogとの連携アプリです。
@@ -25,26 +25,26 @@ pip install -r requirements.txt
 
 3. `config.json.sample`を`config.json`にリネーム
 
-4. `config.json`を編集     
+4. `config.json`を編集
 下記パラメータを参考ください。
 
 | key | 内容 | 例 |
 |:--|:--|:--|
 | TOGGL_API_TOKEN | toggl API用トークン | abcdefghijklmnopqrstuvwxyz |
 | TOGGL_BASE_URL|toggl APIのURL| https://www.toggl.com |
-| TOGGL_PAST_DAYS | N日前までのtogglデータを取り込み | 6 | 
-| BACKLOG_PRJ_KEY | Backlogのプロジェクトキー | ONOUE | 
-| BACKLOG_BASE_URL | Backlog APIのURL | https://nulab-exam.backlog.jp |
+| TOGGL_PAST_DAYS | N日前までのtogglデータを取り込み | 6 |
+| BACKLOG_PRJ_KEY | Backlogのプロジェクトキー | ONOUE |
+| BACKLOG_BASE_URL | Backlog APIのURL | https://hoge.backlog.jp |
 | BACKLOG_APIKEY | toggl API用Key | zyxwvutsrqponmlkjihgfedcba |
 | BACKLOG_COMMENT | Backlogを更新するときのコメント接頭辞 | [togglより連携] |
-| BACKLOG_COMMENT_COUNT | Backlog APIで一回に取得するコメント数（上限100） | 100 | 
-| DB_HOST | togglデータ格納用DBのHOST | nulab-exam-dev.hogefugafoo.ap-northeast-1.rds.amazonaws.co |
-| DB_NAME | togglデータ格納用DBのDB名 | nulab_exam |
+| BACKLOG_COMMENT_COUNT | Backlog APIで一回に取得するコメント数（上限100） | 100 |
+| DB_HOST | togglデータ格納用DBのHOST | hoge-dev.hogefugafoo.ap-northeast-1.rds.amazonaws.co |
+| DB_NAME | togglデータ格納用DBのDB名 | hoge |
 | DB_PORT | togglデータ格納用DBのPORT | 5432 |
-| DB_USER | togglデータ格納用DBのUSER名 | nulab_exam_dev
+| DB_USER | togglデータ格納用DBのUSER名 | hoge_exam_dev
 | DB_PASSWORD | togglデータ格納用DBのPASSWORD | aaaaabbbbcccc |
 
-5.chalice実行    
+5.chalice実行
 
 ```bash:bash
 # local実行
@@ -94,7 +94,7 @@ Backlog上で課題作成時に「実績時間」を登録した場合、その�
 - テストコード
 - 監視
 - AWS SAMでRDSを管理
-- その他便利ツール導入    
+- その他便利ツール導入
 https://www.slideshare.net/aodag/python-172432039
 
 随時対応します

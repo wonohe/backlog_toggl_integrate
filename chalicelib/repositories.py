@@ -19,7 +19,7 @@ import re
 import psycopg2
 import psycopg2.extras
 
-app = Chalice(app_name='nulabExamApp')
+app = Chalice(app_name='ExamApp')
 # productionでもcloudwatchにlog出力する
 app.debug = True
 

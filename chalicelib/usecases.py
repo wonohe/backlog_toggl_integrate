@@ -10,7 +10,7 @@ from chalicelib.repositories import BacklogIssueRepository
 import os
 import math
 
-app = Chalice(app_name='nulabExamApp')
+app = Chalice(app_name='ExamApp')
 # productionでもcloudwatchにlog出力する
 app.debug = True
 
